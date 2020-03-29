@@ -1,0 +1,44 @@
+{
+    "user": "Southclaws",
+    "repo": "pawn-yaml",
+    "entry": "test.pwn",
+    "output": "test/gamemodes/test.amx",
+    "dependencies": [
+        "pawn-lang/samp-stdlib"
+    ],
+    "dev_dependencies": [
+        "pawn-lang/YSI-Includes@5.x"
+    ],
+    "build": {
+        "version": "3.10.9"
+    },
+    "runtime": {
+        "plugins": [
+            "Southclaws/pawn-yaml"
+        ]
+    },
+    "resources": [
+        {
+            "name": "pawn-yaml-linux.zip",
+            "archive": true,
+            "platform": "linux",
+            "includes": [
+                "includes"
+            ],
+            "plugins": [
+                "plugins/yaml.so"
+            ]
+        },
+        {
+            "name": "pawn-yaml-windows.zip",
+            "archive": true,
+            "platform": "windows",
+            "includes": [
+                "includes"
+            ],
+            "plugins": [
+                "plugins/yaml.dll"
+            ]
+        }
+    ]
+}
