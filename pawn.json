@@ -19,26 +19,14 @@
     },
     "resources": [
         {
-            "name": "pawn-yaml-linux.zip",
-            "archive": true,
-            "platform": "linux",
-            "includes": [
-                "includes"
-            ],
-            "plugins": [
-                "plugins/yaml.so"
-            ]
+            "name": "yaml.so",
+            "archive": false,
+            "platform": "linux"
         },
         {
-            "name": "pawn-yaml-windows.zip",
-            "archive": true,
-            "platform": "windows",
-            "includes": [
-                "includes"
-            ],
-            "plugins": [
-                "plugins/yaml.dll"
-            ]
+            "name": "yaml.dll",
+            "archive": false,
+            "platform": "windows"
         }
     ]
 }
